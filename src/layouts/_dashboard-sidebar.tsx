@@ -57,6 +57,25 @@ const menuItems = [
     icon: <DiskIcon />,
     href: routes.nftDetails,
   },
+  {
+    name: 'Vote',
+    icon: <VoteIcon />,
+    href: '/vote',
+    dropdownItems: [
+      {
+        name: 'Explore',
+        href: routes.vote,
+      },
+      {
+        name: 'Vote with pools',
+        href: routes.proposals,
+      },
+      {
+        name: 'Create proposal',
+        href: routes.createProposal,
+      },
+    ],
+  },
 ];
 
 type SidebarProps = {
