@@ -28,8 +28,8 @@ const HomePage: NextPageWithLayout<
   return (
     <>
       <NextSeo
-        title="Criptic"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        title="Web3 dashboard"
+        description="Web3 dashboard - Crypto Dashboard"
       />
       <DashboardLayout>
         <div className="flex flex-wrap">

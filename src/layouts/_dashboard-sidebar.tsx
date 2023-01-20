@@ -57,30 +57,7 @@ const menuItems = [
     icon: <DiskIcon />,
     href: routes.nftDetails,
   },
-  {
-    name: 'Profile',
-    icon: <ProfileIcon />,
-    href: routes.profile,
-  },
-  {
-    name: 'Vote',
-    icon: <VoteIcon />,
-    href: '/vote',
-    dropdownItems: [
-      {
-        name: 'Explore',
-        href: routes.vote,
-      },
-      {
-        name: 'Vote with pools',
-        href: routes.proposals,
-      },
-      {
-        name: 'Create proposal',
-        href: routes.createProposal,
-      },
-    ],
-  },
+ 
 ];
 
 type SidebarProps = {
@@ -111,28 +88,6 @@ export default function Sidebar({ className }: SidebarProps) {
           </Button>
         </div>
       </div>
-
-      <Scrollbar style={{ height: 'calc(100% - 96px)' }}>
-        <div className="px-6 pb-5 2xl:px-8">
-          <AuthorCard
-            image={AuthorImage}
-            name="Cameron Williamson"
-            role="admin"
-          />
-
-          <div className="mt-12">
-            {menuItems.map((item, index) => (
-              <MenuItem
-                key={index}
-                name={item.name}
-                href={item.href}
-                icon={item.icon}
-                dropdownItems={item.dropdownItems}
-              />
-            ))}
-          </div>
-        </div>
-      </Scrollbar>
     </aside>
   );
 }
