@@ -57,7 +57,6 @@ const menuItems = [
     icon: <DiskIcon />,
     href: routes.nftDetails,
   },
- 
 ];
 
 type SidebarProps = {
